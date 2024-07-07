@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>departments</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul {
+            top: 0px;
+            position: fixed;
+            z-index: 5;
+            margin: 0;
+            background-color: #C21717 !important;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33px;
+            width: 100%;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .topslide {
+            margin-top: -11px;
+            height: 260px;
+            background-color: #003262;
+        }
+
+        #logo {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 115px;
+        }
+
+        #g20 {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 1142px;
+        }
+
+        #g20 img {
+            height: 88px;
+            width: 157px;
+            border-radius: 20px;
+        }
+        .marq{
+            z-index: 10;
+        }
+
+        .dropmenu .menu {
+            color: white;
+            display: flex;
+            position: absolute;
+            top: 180px;
+            left: 200px;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        .dropmenu li {
+            list-style: none;
+        }
+
+        .dropmenu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            z-index: 2;
+            display: none;
+        }
+
+        .dropmenu li:hover .submenu {
+            display: block !important;
+            position: absolute;
+            background-color: #C21717 !important;
+            margin-top: 2px;
+            margin-left: -15px;
+        }
+
+        .dropmenu li:hover .submenu ul {
+            display: block;
+            margin: 10px;
+            padding-left: 7px;
+        }
+
+        .dropmenu li:hover .submenu ul li {
+            width: 350px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+        }
+
+        .dropmenu li:hover .submenu ul li:last-child {
+            border-bottom: none;
+        }
+
+        .lastslide {
+            padding-top: 5px;
+            background-color: #003262;
+        }
+
+        .last {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            border-right: 1px dashed #969696;
+            width: 300px;
+            height: 370px;
+            padding-right: 20px;
+        }
+
+        .last p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .last p {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #969696;
+        }
+
+        #quick {
+            margin: 50px 0px 30px 70px;
+
+        }
+
+        #explore {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #social {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #netaji {
+            padding-top: 20px;
+            margin: 50px 0px 30px 30px;
+        }
+        .content{
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .department{
+            width: 300px;
+            height: 150px;
+            color: white;
+            /* background-color: rgb(170, 166, 166); */
+            background-color: #C21717;
+            box-shadow: 3px 3px 2px 3px rgb(179, 104, 104);
+            text-align: center;
+            font-size: 1.5em;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar">
+            <ul>
+                <li><a href="NSUT_NEW.html">Home</a></li>
+                <li>Departments</li>
+                <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payement Gateway</a></li>
+                <li><a href="NSUT_TNP.html">Trainig & Placement</a></li>
+                <li><a href="NSUT_UMS.html">UMS</a></li>
+                <li><a href="NSUT_Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topslide">
+        <div id="logo"><img src="http://nsut.ac.in/sites/default/files/logo_nsut_0_0_0_0.png" alt=""></div>
+        <div id="g20"><img src="http://nsut.ac.in/sites/default/files/inline-images/G20Whiteback.jpg" alt=""></div>
+       
+        <div class="dropmenu">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">About NSUT</a></li>
+                            <li><a href="">Vision & mission</a></li>
+                            <li><a href="">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Administraion</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Chancellor,NSUT</a></li>
+                            <li><a href="">Vice Chancellor's Profile</a></li>
+                            <li><a href="">Former Directors</a></li>
+                            <li><a href="">List Of Deans</a></li>
+                            <li><a href="">Members Of Court</a></li>
+                            <li><a href="">The Senate</a></li>
+                            <li><a href="">Finance Committee</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Academics</a><i class="bi bi-caret-down">
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Faculties</a></li>
+                                <li><a href="">Departments</a></li>
+                                <li><a href="">Centres</a></li>
+                                <li><a href="">Facilities</a></li>
+                                <li><a href="">Educational Programmes</a></li>
+                            </ul>
+                        </div>
+                    </i></li>
+                <li><a href="">Admissions</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">UG Admission</a></li>
+                            <li><a href="">PG Admission</a></li>
+                            <li><a href="">Phd Admission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Alumni</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Alumni Affairs</a></li>
+                            <li><a href="">Alumni Network</a></li>
+                            <li><a href=""></a>Distinguished Alumni</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Resources</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Tenders</a></li>
+                            <li><a href="">NIRF</a></li>
+                            <li><a href="">Hostels</a></li>
+                            <li><a href="">Sports</a></li>
+                            <li><a href="">Time Table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Research</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Latest Research</a></li>
+                            <li><a href="">Research and development unit</a></li>
+                            <li><a href="">Conferences</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="department"><p>Biological Sciences Engineering (Main Campus)</p></div>
+        <div class="department"><p>Chemistry (East Campus)</p></div>
+        <div class="department"><p>Civil Engineering (West Campus)</p></div>
+        <div class="department"><p>Mechanical Engineering (East Campus)</p></div>
+        <div class="department"><p>Department Of Geo Informatics (West Campus) </p></div>
+        <div class="department"><p>Department Of Architecture And Planning</p></div>
+        <div class="department"><p>Department Of Design</p></div>
+        <div class="department"><p>Department Of Physical Education</p></div>
+        <div class="department"><p>Physics (Main Campus)</p></div>
+        <div class="department"><p>Physics (East Campus)</p></div>
+        <div class="department"><p>Mechanical Engineering (Main Campus)</p></div>
+        <div class="department"><p>Mathematics (Main Campus)</p></div>
+        <div class="department"><p>Mathematics (East Campus)</p></div>
+        <div class="department"><p>Management Studies (Main Campus)</p></div>
+        <div class="department"><p>Information Technology (West Campus)</p></div>
+        <div class="department"><p>Information Technology (Main Campus)</p></div>
+        <div class="department"><p>Humanities And Social Sciences (Main Campus)</p></div>
+        <div class="department"><p>Humanities And Social Sciences (East Campus)</p></div>
+        <div class="department"><p>Electrical Engineering (Main Campus)</p></div>
+        <div class="department"><p>Computer Science And Engineering (East Campus)</p></div>
+        <div class="department"><p>Computer Science And Engineering (Main Campus)</p></div>
+    </div>
+    <div class="lastslide">
+        <div id="quick" class="last">
+            <h3>QUICK LINKS</h3>
+
+            <p><a href="http://nsut.ac.in/en/list-of-faculties">Faculties</a></p>
+            <p><a href="http://nsut.ac.in/en/departments">Departments</a></p>
+            <p><a href="http://nsut.ac.in/en/Centres">Centers</a></p>
+            <p><a href="http://nsut.ac.in/en/Facilities">Facilities</a></p>
+            <p><a href="http://nsut.ac.in/en/notices">Notices</a></p>
+            <p><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payements</a></p>
+            <p><a href="https://www.imsnsit.org/imsnsit/">UMS</a></p>
+
+        </div>
+        <div id="explore" class="last">
+            <h3>EXPLORE</h3>
+
+            <p><a href="http://nsut.ac.in/en/centre/central-computer-centre">Central Computer Centre</a></p>
+            <p><a href="http://nsut.ac.in/en">Campus Life</a></p>
+            <p><a href="http://nsut.ac.in/en">University Newsletter</a></p>
+            <p><a href="http://nsut.ac.in/en">Educational Programmes</a></p>
+            <p><a href="http://nsut.ac.in/en">Social Initiatives</a></p>
+            <p><a href="http://nsut.ac.in/en/contact-us">Contact Us</a></p>
+
+        </div>
+        <div id="social" class="last">
+            <h3>SOCIAL MEDIA (DELHI GOVT.)</h3>
+
+            <p><a href="https://www.instagram.com/delhigovdigital/">Instagram</a></p>
+            <p><a href="https://www.youtube.com/c/DelhiGovernmentDG">YouTube</a></p>
+            <p><a href="https://www.facebook.com/DelhiGovDigital/">Facebook</a></p>
+            <p><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDelhiGovDigital%2F">Twitter</a></p>
+
+        </div>
+        <div id="netaji" class="last">
+            <p>Netaji Subhas University of Technology(NSUT)</p>
+            <p>Formerly Netaji Subhas Institute of Technology(NSIT)</p>
+            <p>(Govt. of NCT of Delhi)</p>
+        </div>
+    </div>
+</body>
+
+</html>

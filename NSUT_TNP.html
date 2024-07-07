@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNP</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul {
+            top: 0px;
+            position: fixed;
+            z-index: 5;
+            margin: 0;
+            background-color: #C21717 !important;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33px;
+            width: 100%;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .topslide {
+            margin-top: -11px;
+            height: 260px;
+            background-color: #003262;
+        }
+
+        #logo {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 115px;
+        }
+
+        #g20 {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 1142px;
+        }
+
+        #g20 img {
+            height: 88px;
+            width: 157px;
+            border-radius: 20px;
+        }
+        .marq{
+            z-index: 10;
+        }
+
+        .dropmenu .menu {
+            color: white;
+            display: flex;
+            position: absolute;
+            top: 180px;
+            left: 200px;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        .dropmenu li {
+            list-style: none;
+        }
+
+        .dropmenu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            z-index: 2;
+            display: none;
+        }
+
+        .dropmenu li:hover .submenu {
+            display: block !important;
+            position: absolute;
+            background-color: #C21717 !important;
+            margin-top: 2px;
+            margin-left: -15px;
+        }
+
+        .dropmenu li:hover .submenu ul {
+            display: block;
+            margin: 10px;
+            padding-left: 7px;
+        }
+
+        .dropmenu li:hover .submenu ul li {
+            width: 350px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+        }
+
+        .dropmenu li:hover .submenu ul li:last-child {
+            border-bottom: none;
+        }
+
+        .lastslide {
+            padding-top: 5px;
+            background-color: #003262;
+        }
+
+        .last {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            border-right: 1px dashed #969696;
+            width: 300px;
+            height: 370px;
+            padding-right: 20px;
+        }
+
+        .last p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .last p {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #969696;
+        }
+
+        #quick {
+            margin: 50px 0px 30px 70px;
+
+        }
+
+        #explore {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #social {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #netaji {
+            padding-top: 20px;
+            margin: 50px 0px 30px 30px;
+        }
+        .content{
+            border: 15px solid  #003262;
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+        }
+        .left{
+            background-color: #003262;
+            width: 850px;
+            padding: 0px 50px;
+        }
+        .left p{
+            padding-top: 15px;
+        }
+        .left a{
+            text-decoration: none;
+            color: white;
+        }
+        .right{
+            padding: 30px 40px;
+        }
+        .right h2{
+            font-size: 2.5em;
+            margin: 0px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar">
+            <ul>
+                <ul>
+                    <li><a href="NSUT_NEW.html">Home</a></li>
+                    <li><a href="NSUT_departmenst.html">Departments</a></li>
+                    <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payement Gateway</a></li>
+                    <li>Trainig & Placement</li>
+                    <li><a href="NSUT_UMS.html">UMS</a></li>
+                    <li><a href="NSUT_Contactus.html">Contact Us</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+    <div class="topslide">
+        <div id="logo"><img src="http://nsut.ac.in/sites/default/files/logo_nsut_0_0_0_0.png" alt=""></div>
+        <div id="g20"><img src="http://nsut.ac.in/sites/default/files/inline-images/G20Whiteback.jpg" alt=""></div>
+       
+        <div class="dropmenu">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">About NSUT</a></li>
+                            <li><a href="">Vision & mission</a></li>
+                            <li><a href="">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Administraion</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Chancellor,NSUT</a></li>
+                            <li><a href="">Vice Chancellor's Profile</a></li>
+                            <li><a href="">Former Directors</a></li>
+                            <li><a href="">List Of Deans</a></li>
+                            <li><a href="">Members Of Court</a></li>
+                            <li><a href="">The Senate</a></li>
+                            <li><a href="">Finance Committee</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Academics</a><i class="bi bi-caret-down">
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Faculties</a></li>
+                                <li><a href="">Departments</a></li>
+                                <li><a href="">Centres</a></li>
+                                <li><a href="">Facilities</a></li>
+                                <li><a href="">Educational Programmes</a></li>
+                            </ul>
+                        </div>
+                    </i></li>
+                <li><a href="">Admissions</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">UG Admission</a></li>
+                            <li><a href="">PG Admission</a></li>
+                            <li><a href="">Phd Admission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Alumni</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Alumni Affairs</a></li>
+                            <li><a href="">Alumni Network</a></li>
+                            <li><a href=""></a>Distinguished Alumni</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Resources</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Tenders</a></li>
+                            <li><a href="">NIRF</a></li>
+                            <li><a href="">Hostels</a></li>
+                            <li><a href="">Sports</a></li>
+                            <li><a href="">Time Table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Research</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Latest Research</a></li>
+                            <li><a href="">Research and development unit</a></li>
+                            <li><a href="">Conferences</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <p><a href="">Existing Students</a></p>
+            <p><a href="">University Management System</a></p>
+            <p><a href="">Academic Calendar</a></p>
+            <p><a href="">List Of Holidays</a></p>
+            <p><a href="">Training & Placement</a></p>
+            <p><a href="">Awards</a></p>
+            <p><a href="">Central Library</a></p>
+            <p><a href="">Central Computer Centre</a></p>
+            <p><a href="">Curriculum Information</a></p>
+            <p><a href="">Moodle</a></p>
+            <p><a href="">Time Table</a></p>
+            <p><a href="">Hostels</a></p>
+            <p><a href="">Health And Wellness</a></p>
+            <p><a href="">Sports</a></p>
+            <p><a href="">Prospectus</a></p>
+            <p><a href="">Smart Notice Board</a></p>
+            <p><a href="">Student Centre</a></p>
+            <p><a href="">Co-Curricular Activities, Societies And Clubs</a></p>
+            <p><a href="">Entrepreneurship</a></p>
+            <p><a href="">Transcripts / Certificates / Degree Verification</a></p>
+            <p><a href="">Fee Information</a></p>
+        </div>
+        <div class="right">
+            <h2>Training</h2>
+            <p>Practical Training is a very important component of the curriculum. As a part of the curriculum, arrangements are made for the students to undergo practical training during winter and summer vacations in Multinational/Private/Public Sector Undertakings/Government Department and Foreign Universities. Some of the prominent industrial organizations in which NSUT Students have completed Internships include Microsoft, Amazon, Texas Instrument, Google, Qualcomm, Cisco, Hero Moto Corp, etc. Some of the PSU’s where students are enrolled for internships are MTNL, Bharat Petroleum Corporation Limited, Engineers India Limited, Airport Authority of India, etc.
+            </p>
+            <h2>Placement</h2>
+            <p>Campus Recruitment Programme conducted by the Institute is very vital and crucial for theyoung engineers aspiring for appropriate placement in Government Departments, Multi-National Companies, Public Sector Undertakings etc.
+                <br>A close interaction between the Institute and various company executives has created excellentplacement record. The Students Placement Coordinators actively participate in organizing Campus Recruitment Programme. By virtue of their hard work and dedication, the students of this Institute have reached top positions in the industries and academia. The Institute has an excellent record of assuring confirmed jobs in prestigious organizations.
+                <br>On the basis of records available, almost all the students who graduated in current year havesecured jobs either in in Multinational companies, Private and Public Sector Undertakings and Government Departments with many students being offered multiple jobs. Some of our students have been selected at various reputed B-Schools of India like Indian Institutes of Management (Ahmadabad, Calcutta, Kozhikode, and Lucknow), Faculty of Management Studies (FMS) etc. Some students were also selected by the top Foreign Universities to pursue higher studies in specialised areas like University of Pennsylvania, Columbia University etc.
+
+            </p>
+            <h2>Joining Date:</h2>
+            <p>M.Tech. Course for which exams are held in June. The result is declared by 1st August and the students are ready to join by August.
+            
+            </p>
+            <h2>Contact</h2>
+            <p>Those interested in the campus recruitment may please contact:</p>
+            <br>
+            <p> <b>Dr. M.P.S. Bhatia</b> (+91-9968604104 +91-9818192294) <br>
+                Training & Placement <br>
+                Netaji Subhas University of Technology <br>
+                (Formerly, Netaji Subhas Institute of Technology) <br>
+                Sector-3, Dwaraka, <br>
+                New Delhi-110078, INDIA</p>
+            <p> <b>Email:</b> placements@nsitonline.in, Web site:  placements@nsit.ac.in</p>
+            <p> <b>Telephone No:</b> +91-11-25099021 (Direct), 25099037-42 Ext-2209, 2211
+               <br> <b>Fax:</b> +91-11-25099022</p>
+        </div>
+    </div>
+    <div class="lastslide">
+        <div id="quick" class="last">
+            <h3>QUICK LINKS</h3>
+
+            <p><a href="http://nsut.ac.in/en/list-of-faculties">Faculties</a></p>
+            <p><a href="http://nsut.ac.in/en/departments">Departments</a></p>
+            <p><a href="http://nsut.ac.in/en/Centres">Centers</a></p>
+            <p><a href="http://nsut.ac.in/en/Facilities">Facilities</a></p>
+            <p><a href="http://nsut.ac.in/en/notices">Notices</a></p>
+            <p><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payements</a></p>
+            <p><a href="https://www.imsnsit.org/imsnsit/">UMS</a></p>
+
+        </div>
+        <div id="explore" class="last">
+            <h3>EXPLORE</h3>
+
+            <p><a href="http://nsut.ac.in/en/centre/central-computer-centre">Central Computer Centre</a></p>
+            <p><a href="http://nsut.ac.in/en">Campus Life</a></p>
+            <p><a href="http://nsut.ac.in/en">University Newsletter</a></p>
+            <p><a href="http://nsut.ac.in/en">Educational Programmes</a></p>
+            <p><a href="http://nsut.ac.in/en">Social Initiatives</a></p>
+            <p><a href="http://nsut.ac.in/en/contact-us">Contact Us</a></p>
+
+        </div>
+        <div id="social" class="last">
+            <h3>SOCIAL MEDIA (DELHI GOVT.)</h3>
+
+            <p><a href="https://www.instagram.com/delhigovdigital/">Instagram</a></p>
+            <p><a href="https://www.youtube.com/c/DelhiGovernmentDG">YouTube</a></p>
+            <p><a href="https://www.facebook.com/DelhiGovDigital/">Facebook</a></p>
+            <p><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDelhiGovDigital%2F">Twitter</a></p>
+
+        </div>
+        <div id="netaji" class="last">
+            <p>Netaji Subhas University of Technology(NSUT)</p>
+            <p>Formerly Netaji Subhas Institute of Technology(NSIT)</p>
+            <p>(Govt. of NCT of Delhi)</p>
+        </div>
+    </div>
+</body>
+
+</html>

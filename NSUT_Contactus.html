@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul {
+            top: 0px;
+            position: fixed;
+            z-index: 5;
+            margin: 0;
+            background-color: #C21717 !important;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33px;
+            width: 100%;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .topslide {
+            margin-top: -11px;
+            height: 260px;
+            background-color: #003262;
+        }
+
+        #logo {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 115px;
+        }
+
+        #g20 {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 1142px;
+        }
+
+        #g20 img {
+            height: 88px;
+            width: 157px;
+            border-radius: 20px;
+        }
+
+        .marq {
+            z-index: 10;
+        }
+
+        .dropmenu .menu {
+            color: white;
+            display: flex;
+            position: absolute;
+            top: 180px;
+            left: 200px;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        .dropmenu li {
+            list-style: none;
+        }
+
+        .dropmenu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            z-index: 2;
+            display: none;
+        }
+
+        .dropmenu li:hover .submenu {
+            display: block !important;
+            position: absolute;
+            background-color: #C21717 !important;
+            margin-top: 2px;
+            margin-left: -15px;
+        }
+
+        .dropmenu li:hover .submenu ul {
+            display: block;
+            margin: 10px;
+            padding-left: 7px;
+        }
+
+        .dropmenu li:hover .submenu ul li {
+            width: 350px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+        }
+
+        .dropmenu li:hover .submenu ul li:last-child {
+            border-bottom: none;
+        }
+
+        .lastslide {
+            padding-top: 5px;
+            background-color: #003262;
+        }
+
+        .last {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            border-right: 1px dashed #969696;
+            width: 300px;
+            height: 370px;
+            padding-right: 20px;
+        }
+
+        .last p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .last p {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #969696;
+        }
+
+        #quick {
+            margin: 50px 0px 30px 70px;
+
+        }
+
+        #explore {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #social {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #netaji {
+            padding-top: 20px;
+            margin: 50px 0px 30px 30px;
+        }
+
+        .content {
+            width: 80%;
+            margin: 10px auto;
+        }
+        .row{
+            margin: 20px;
+        }
+        .row h2{
+            font-size: 2em;
+        }
+        .row h3{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar">
+            <ul>
+                <li><a href="NSUT_NEW.html">Home</a></li>
+                <li><a href="NSUT_departmenst.html">Departments</a></li>
+                <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payement Gateway</a></li>
+                <li><a href="NSUT_TNP.html">Trainig & Placement</a></li>
+                <li><a href="NSUT_UMS.html">UMS</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topslide">
+        <div id="logo"><img src="http://nsut.ac.in/sites/default/files/logo_nsut_0_0_0_0.png" alt=""></div>
+        <div id="g20"><img src="http://nsut.ac.in/sites/default/files/inline-images/G20Whiteback.jpg" alt=""></div>
+
+        <div class="dropmenu">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">About NSUT</a></li>
+                            <li><a href="">Vision & mission</a></li>
+                            <li><a href="">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Administraion</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Chancellor,NSUT</a></li>
+                            <li><a href="">Vice Chancellor's Profile</a></li>
+                            <li><a href="">Former Directors</a></li>
+                            <li><a href="">List Of Deans</a></li>
+                            <li><a href="">Members Of Court</a></li>
+                            <li><a href="">The Senate</a></li>
+                            <li><a href="">Finance Committee</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Academics</a><i class="bi bi-caret-down">
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Faculties</a></li>
+                                <li><a href="">Departments</a></li>
+                                <li><a href="">Centres</a></li>
+                                <li><a href="">Facilities</a></li>
+                                <li><a href="">Educational Programmes</a></li>
+                            </ul>
+                        </div>
+                    </i></li>
+                <li><a href="">Admissions</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">UG Admission</a></li>
+                            <li><a href="">PG Admission</a></li>
+                            <li><a href="">Phd Admission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Alumni</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Alumni Affairs</a></li>
+                            <li><a href="">Alumni Network</a></li>
+                            <li><a href=""></a>Distinguished Alumni</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Resources</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Tenders</a></li>
+                            <li><a href="">NIRF</a></li>
+                            <li><a href="">Hostels</a></li>
+                            <li><a href="">Sports</a></li>
+                            <li><a href="">Time Table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Research</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Latest Research</a></li>
+                            <li><a href="">Research and development unit</a></li>
+                            <li><a href="">Conferences</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <p>home/contact us</p>
+        <div>
+            <iframe frameborder="0" height="400px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.3382703252262!2d77.03684599538613!3d28.609478981846056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e540ab22a28446!2sNetaji+Subhas+Institute+Of+Technology!5e0!3m2!1sen!2sin!4v1412520884364"
+                width="100%"></iframe>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Contact Details</h2>
+
+                <p>For any query related to Academics, Please Contact</p>
+
+                <p style="font-size:20px"><b>Academic Section, NSUT Sector 3<br />
+                        Dwarka, New Delhi-110078</b></p>
+
+                <p>Landline No.- 011-25000268</p>
+
+                <p>Email: academic[at]nsut[dot]ac[dot]in</p>
+
+                <p>Timings: Monday - Friday: 9:00 AM to 6:00 PM</p>
+            </div>
+        </div>
+
+
+
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <h3>B.Tech. Admissions</h3>
+
+                <p>Helpline No : +91-9205475102, +91-9205475103 (during office hours 10 AM to 5 PM)</p>
+
+                <p>E-Mail : helpdesk[dot]jacdelhi2022[at]nsut[dot]ac[dot]in</p>
+
+
+                <h3>Ph.D Admissions</h3>
+
+                <p>Helpline No : 9205475052 (during office hours 10 AM to 5 PM)</p>
+
+                <p>Fax : 011-25099022</p>
+
+                <p>E-Mail : helpdesk[dot]phd[at]nsut[dot]ac[dot]in</p>
+
+                <h3>M.Tech / Ph.D Admissions</h3>
+
+                <p>Helpline No : 9205475070, 011-25000273, 011-25000278 (during office hours 10 AM to 5 PM)</p>
+
+                <p>Fax : 011-25099022</p>
+
+                <p>E-Mail : academicpg[at]gmail[dot]com</p>
+            </div>
+        </div>
+
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <h2>RTI Cell</h2>
+
+                <p style="font-size:20px"><b>Prof. Sanjeeve Thakur</b></p>
+
+                <p>First Appellate Authority / Registrar, NSUT</p>
+
+                <p>Contact:- 011-25099044 (Direct), 011-25000097</p>
+
+                <p>Timings: Monday - Friday: 9:00 AM to 6:00 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lastslide">
+        <div id="quick" class="last">
+            <h3>QUICK LINKS</h3>
+
+            <p><a href="http://nsut.ac.in/en/list-of-faculties">Faculties</a></p>
+            <p><a href="http://nsut.ac.in/en/departments">Departments</a></p>
+            <p><a href="http://nsut.ac.in/en/Centres">Centers</a></p>
+            <p><a href="http://nsut.ac.in/en/Facilities">Facilities</a></p>
+            <p><a href="http://nsut.ac.in/en/notices">Notices</a></p>
+            <p><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payements</a></p>
+            <p><a href="https://www.imsnsit.org/imsnsit/">UMS</a></p>
+
+        </div>
+        <div id="explore" class="last">
+            <h3>EXPLORE</h3>
+
+            <p><a href="http://nsut.ac.in/en/centre/central-computer-centre">Central Computer Centre</a></p>
+            <p><a href="http://nsut.ac.in/en">Campus Life</a></p>
+            <p><a href="http://nsut.ac.in/en">University Newsletter</a></p>
+            <p><a href="http://nsut.ac.in/en">Educational Programmes</a></p>
+            <p><a href="http://nsut.ac.in/en">Social Initiatives</a></p>
+            <p><a href="http://nsut.ac.in/en/contact-us">Contact Us</a></p>
+
+        </div>
+        <div id="social" class="last">
+            <h3>SOCIAL MEDIA (DELHI GOVT.)</h3>
+
+            <p><a href="https://www.instagram.com/delhigovdigital/">Instagram</a></p>
+            <p><a href="https://www.youtube.com/c/DelhiGovernmentDG">YouTube</a></p>
+            <p><a href="https://www.facebook.com/DelhiGovDigital/">Facebook</a></p>
+            <p><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDelhiGovDigital%2F">Twitter</a></p>
+
+        </div>
+        <div id="netaji" class="last">
+            <p>Netaji Subhas University of Technology(NSUT)</p>
+            <p>Formerly Netaji Subhas Institute of Technology(NSIT)</p>
+            <p>(Govt. of NCT of Delhi)</p>
+        </div>
+    </div>
+</body>
+
+</html>

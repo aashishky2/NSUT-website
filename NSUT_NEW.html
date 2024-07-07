@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSUT NEW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Heebo:wght@300&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul {
+            top: 0px;
+            position: fixed;
+            z-index: 5;
+            margin: 0;
+            background-color: #C21717 !important;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33px;
+            width: 100%;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .topslide {
+            margin-top: -11px;
+            height: 762px;
+            background: url('http://nsut.ac.in/sites/default/files/2022-09/nsut%20green%20view.jpg') no-repeat center center/cover;
+            animation-name: imageslide;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        /* .topslide::before{
+            background: url('http://nsut.ac.in/sites/default/files/2022-09/nsut%20green%20view.jpg') no-repeat center center/cover;
+            animation-name: imageslide;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        } */
+
+        @keyframes imageslide {
+            0% {
+                background: url('http://nsut.ac.in/sites/default/files/2022-09/nsut%20green%20view.jpg') no-repeat center center/cover;
+            }
+
+            35% {
+                background: url('http://nsut.ac.in/sites/default/files/2022-09/lg.jpg') no-repeat center center/cover;
+            }
+
+            55% {
+                background: url('http://nsut.ac.in/sites/default/files/2023-04/DSC_2275%20%281%29.jpg') no-repeat center center/cover;
+            }
+
+            80% {
+                background: url('http://nsut.ac.in/sites/default/files/2022-10/NSUT%20WEBSITE%20BANNER.jpg') no-repeat center center/cover;
+            }
+        }
+
+        #logo {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 115px;
+        }
+
+        #g20 {
+            display: inline-block;
+            position: absolute;
+            top: 62px;
+            left: 942px;
+        }
+
+        #g20 img {
+            height: 88px;
+            width: 157px;
+            border-radius: 20px;
+        }
+
+        .dropmenu .menu {
+            color: white;
+            display: flex;
+            position: absolute;
+            top: 180px;
+            left: 200px;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        .dropmenu li {
+            list-style: none;
+        }
+
+        .dropmenu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            z-index: 2;
+            display: none;
+        }
+
+        .dropmenu li:hover .submenu {
+            display: block !important;
+            position: absolute;
+            background-color: #C21717 !important;
+            margin-top: 2px;
+            margin-left: -15px;
+        }
+
+        .dropmenu li:hover .submenu ul {
+            display: block;
+            margin: 10px;
+            padding-left: 7px;
+        }
+
+        .dropmenu li:hover .submenu ul li {
+            width: 350px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+        }
+
+        .dropmenu li:hover .submenu ul li:last-child {
+            border-bottom: none;
+        }
+
+        #welcome {
+            height: 200px;
+            width: 800px;
+            display: block;
+            position: relative;
+            top: 400px;
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        #wel1 {
+            letter-spacing: 2px;
+            font-size: 65px;
+            text-shadow: 5px 5px 6px black;
+            margin-bottom: 20px;
+        }
+
+        #wel3 {
+            letter-spacing: 1px;
+            font-size: 28px;
+            text-shadow: 5px 5px 6px black;
+        }
+
+        #abouth1 {
+            margin: 80px 200px 0px 200px;
+            font-family: 'Heebo', sans-serif;
+            font-size: 45px;
+            font-weight: 100;
+        }
+
+        #aboutpara {
+            letter-spacing: 0.8px;
+            margin: 30px 200px 10px 200px;
+            font-size: 18px;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        #abouth1 span {
+            color: #4c6f91;
+        }
+
+        .btn {
+            font-family: 'Heebo', sans-serif;
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+            font-size: 18px;
+            margin: 40px 0px 100px 200px;
+            padding: 5px 1px;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: black;
+        }
+
+        #first {
+            background-color: #F9F9F6;
+            height: 400px;
+        }
+
+        .container {
+            display: inline-block;
+            height: 60px;
+            width: 314px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #campus {
+            background-color: #b3dcff;
+            margin: 90px 0px 0px 170px;
+        }
+
+        #ranking {
+            background-color: #ffeece;
+            margin: 90px 0px 0px 95px;
+        }
+
+        #vc {
+            background-color: #ffc5f8;
+            margin: 90px 170px 0px 95px;
+        }
+
+        .container1 {
+            background-color: white;
+            height: 150px;
+            width: 270px;
+        }
+
+        .container1:hover {
+            transform: scale(1.7);
+        }
+
+        .container1 li a {
+            text-decoration: none;
+            color: #0071b3;
+        }
+
+        #campus1 {
+            display: inline-block;
+            margin: 0px 0px 0px 192px;
+        }
+
+        #ranking1 {
+            margin: 0px 0px 0px 139px;
+            display: inline-block;
+        }
+
+        #vc1 {
+            display: inline-block;
+            margin: 0px 0px 0px 139px;
+        }
+
+        .admissions {
+            color: #C21717;
+            background-color: white;
+            height: 1300px;
+        }
+
+        #adm {
+            text-align: center;
+            height: 110px;
+            padding-top: 30px;
+
+        }
+
+        .admission {
+            display: inline-block;
+            width: 380px;
+            height: 810px;
+            margin: 0px 0px 0px 80px;
+            vertical-align: top;
+        }
+
+        .admission h1 {
+            margin-left: 45px;
+        }
+
+        .admission li {
+            font-size: 20px;
+            padding: 34px;
+        }
+
+        .admission li a {
+            color: #C21717;
+            text-decoration: none;
+        }
+
+        .research {
+            height: 800px;
+            color: white;
+            background-image: url(https://wallpapercave.com/wp/wp7421176.jpg);
+
+        }
+
+        #reshead {
+            font-size: 25px;
+            font-style: italic;
+            padding-top: 80px;
+            padding-left: 500px;
+        }
+
+        #respara {
+            font-size: 30px;
+            letter-spacing: 1px;
+            padding: 0px 320px 80px 400px;
+        }
+
+        #respara h5 {
+            font-weight: lighter;
+            margin-top: 10px;
+        }
+
+        .departments {
+            background-color: white;
+            border-radius: 300px;
+            z-index: 2;
+            display: block;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 448px;
+            top: 3490px;
+
+        }
+
+        #departments {
+            text-align: center;
+            height: 80px;
+            padding-top: 60px;
+        }
+
+        .dep {
+            font-size: 12px;
+            display: inline-block;
+            width: 160px;
+            vertical-align: top;
+            text-align: center;
+            padding: 110px 1px;
+            margin-bottom: 40px;
+        }
+
+        .dep h2 {
+            padding-left: 18px;
+            font-weight: lighter;
+        }
+
+        .dbtn {
+            letter-spacing: 1px;
+            height: 40px;
+            width: 110px;
+            margin-left: 15px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .dbtn:hover {
+            color: white;
+            background-color: black;
+        }
+
+        #faculty {
+            margin-left: 14px;
+        }
+
+        #faculty img {
+            border-radius: 80px;
+        }
+
+        #department {
+            margin-left: 32px;
+        }
+
+        #center {
+            margin-left: 32px;
+        }
+
+        #center img {
+            border-radius: 90px;
+        }
+
+
+
+        .lastslide {
+            padding-top: 380px;
+
+            background-color: rgb(33, 35, 49);
+        }
+
+        .last {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            border-right: 1px dashed #969696;
+            width: 300px;
+            height: 370px;
+            padding-right: 20px;
+        }
+
+        .last p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .last p {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #969696;
+        }
+
+        #quick {
+            margin: 50px 0px 30px 70px;
+
+        }
+
+        #explore {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #social {
+            margin: 50px 0px 30px 30px;
+        }
+
+        #netaji {
+            padding-top: 20px;
+            margin: 50px 0px 30px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li><a href="NSUT_departmenst.html">Departments</a></li>
+                <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payement Gateway</a></li>
+                <li><a href="NSUT_TNP.html">Trainig & Placement</a></li>
+                <li><a href="NSUT_TNP.html">UMS</a></li>
+                <li><a href="NSUT_Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topslide">
+        <div id="logo"><img src="http://nsut.ac.in/sites/default/files/logo_nsut_0_0_0_0.png" alt=""></div>
+        <div id="g20"><img src="http://nsut.ac.in/sites/default/files/inline-images/G20Whiteback.jpg" alt=""></div>
+        <div class="dropmenu">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">About NSUT</a></li>
+                            <li><a href="">Vision & mission</a></li>
+                            <li><a href="">History</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Administraion</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Chancellor,NSUT</a></li>
+                            <li><a href="">Vice Chancellor's Profile</a></li>
+                            <li><a href="">Former Directors</a></li>
+                            <li><a href="">List Of Deans</a></li>
+                            <li><a href="">Members Of Court</a></li>
+                            <li><a href="">The Senate</a></li>
+                            <li><a href="">Finance Committee</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Academics</a><i class="bi bi-caret-down">
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Faculties</a></li>
+                                <li><a href="">Departments</a></li>
+                                <li><a href="">Centres</a></li>
+                                <li><a href="">Facilities</a></li>
+                                <li><a href="">Educational Programmes</a></li>
+                            </ul>
+                        </div>
+                    </i></li>
+                <li><a href="">Admissions</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">UG Admission</a></li>
+                            <li><a href="">PG Admission</a></li>
+                            <li><a href="">Phd Admission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Alumni</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Alumni Affairs</a></li>
+                            <li><a href="">Alumni Network</a></li>
+                            <li><a href=""></a>Distinguished Alumni</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Resources</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Tenders</a></li>
+                            <li><a href="">NIRF</a></li>
+                            <li><a href="">Hostels</a></li>
+                            <li><a href="">Sports</a></li>
+                            <li><a href="">Time Table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Research</a><i class="bi bi-caret-down"></i>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Latest Research</a></li>
+                            <li><a href="">Research and development unit</a></li>
+                            <li><a href="">Conferences</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="welcome">
+            <div class="marq">
+                <marquee behavior="" direction="">PROF. (DR.) ASHOK KUMAR NAGAWAT HAS JOINED AS HON'BLE VICE CHANCELLOR OF NSUT ON 26.09.2023</marquee>
+            </div>
+            <h1 id="wel1">Welcome to NSUT</h1>
+            <h3 id="wel3">Equipping You For Success In Your Career And Life</h3>
+        </div>
+    </div>
+    <div>
+        
+        <h1 id="abouth1">About &nbsp;<span>NSUT</span></h1>
+        <p id="aboutpara">With reference of Delhi Gazette published on Thursday, September 27, 2018 vide No. F.
+            14(7)/LA-2015/PF-III/SB(2018)/2017.—In exercise of powers conferred under sub-section (1) of section 3 of
+            The Delhi Netaji Subhas University of Technology Act, 2017 (DELHI ACT 06 of 2018), the Lieutenant Governor
+            of the National Capital Territory of Delhi hereby appoints the 26th September 2018 as the date on which the
+            University by the name of Netaji Subhas University of Technology, shall be established.</p>
+        <button class="btn">Know More...</button>
+    </div>
+    <div id="first">
+        <div id="campus" class="container">
+            <h4 class="firsthead">Campus</h4>
+        </div>
+        <div id="ranking" class="container">
+            <h4 class="firsthead">Ranking</h4>
+        </div>
+        <div id="vc" class="container">
+            <h4 class="firsthead">VC's Corner</h4>
+        </div>
+        <div id="campus1" class="container1">
+            <ul>
+                <li>Main Campus</li>
+                <li>East Campus</li>
+                <li>West Campus</li>
+            </ul>
+        </div>
+        <div id="ranking1" class="container1">
+            <ul>
+                <li>NSUT secures 60th rank in NIRF Rankings 2023 in Engineering category. For More Rankings
+                </li>
+
+            </ul>
+        </div>
+        <div id="vc1" class="container1">
+            <ul>
+                <li>NSUT is nationally known for holistic education focusing on research <a
+                        href="http://nsut.ac.in/vc-message">More</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="admissions">
+        <div id="adm">
+            <h1>Admissions</h1>
+        </div>
+        <div class="admission" id="ad1">
+            <h1>Ph.D</h1>
+            <ul>
+                <li><a href="https://www.imsnsit.org/imsnsit/elearn_phdregistration.php">Ph.D Admissions 2023-24</a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div class="admission" id="ad2">
+            <h1>Undergraduate</h1>
+            <ul>
+                <li><a href="https://jacdelhi.admissions.nic.in/">B.Tech./B.Arch. Admissions 2023</a></li>
+                <hr>
+                <li><a href="https://drive.google.com/file/d/1u1Roy7xFevFsH-caaupRIOMCUMQk9j27/view">Department Of
+                        Design Admission Brochure 2023-24</a></li>
+                <hr>
+                <li><a href="https://nsut.digitaledu.in/modules/Candidate/candidateLogin.php?admParam=eccbc8%E2%80%A6">Admissions
+                        For Business Blaster Session 2023-24 Is Open Now. Click Here To Apply</a></li>
+                <hr>
+                <li><a href="https://drive.google.com/file/d/134TJdFuYCBjxXTq4x7KLqi9EohktS3Ci/view">List Of Candidates
+                        Allotted Seats In First Round Of Counselling Held On 13, 14 And 21
+                        June 2023</a></li>
+                <hr>
+                <li><a href="https://www.cmacadmissions.com/">
+                        Registrations For BBA Admissions Have Started From 20th July 2023. Click Here To Apply</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="admission" id="ad3">
+            <h1>Postgraduate</h1>
+            <ul>
+                <li><a href="https://www.cmacadmissions.com/">Registrations For MBA Admission 2023</a></li>
+                <hr>
+                <li><a href="https://drive.google.com/file/d/1StcqEK0I69R7nG2Ya_4KHDzn5uFvaU9k/view"> Admission Criteria
+                        M.Sc./M.A. Programme (2023-24)</a></li>
+                <hr>
+                <li><a href="https://www.imsnsit.org/imsnsit/elearn_pgregistration.php">M.Tech Admission 2023-24</a>
+                </li>
+                <hr>
+                <li><a href="https://nsut.digitaledu.in/modules/Candidate/candidateLogin.php?admParam=eccbc8%E2%80%A6">Admissions
+                        For MBA-IEV Session 2023-24 Is Open Now. Click Here To Apply</a></li>
+                <hr>
+                <li><a href="https://drive.google.com/file/d/1CURLyu07LscU8BsWNnCxgXzwjti2_NVo/view">Brochure For M.A.
+                        In English Literature, Language And Communication & Applied
+                        Psychology</a></li>
+                <hr>
+                <li><a href="https://nsut.digitaledu.in/modules/Candidate/candidateLogin.php?admParam=c81e72%E2%80%A6">
+                        Click Here To Apply For M.A. Admissions</a></li>
+                <hr>
+                <li><a href="https://nsut.digitaledu.in/modules/Candidate/candidateLogin.php?admParam=c4ca42%E2%80%A6">Click
+                        Here To Apply For M.Sc. Admissions</a></li>
+                <hr>
+                <li><a href="https://drive.google.com/file/d/1nrqBIImJ7obJXhGSQZmpmvWVVocfta7k/view">Seat Matrix For
+                        M.Sc. 2023</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="research">
+        <div id="reshead">
+            <h1>Research at the NSUT</h1>
+        </div>
+        <div id="respara">
+            <h5>NSUT's objective is to be a national centre for technological development through education, research,
+                innovation, and scientific consultancy. Our focus is technical-scientific research which contributes to
+                the development of society. As a business-oriented university, our aim is to deliver research at a high
+                international level, which is based on the link between theory and model-building and empiricism.</h5>
+        </div>
+    </div>
+    <div class="departments">
+        <div id="departments">
+            <h1>DEPARTMENTS</h1>
+        </div>
+        <div class="dep" id="faculty">
+            <img src="http://nsut.ac.in/sites/default/files/2021-03/dep3.PNG" alt="">
+            <h2>FACULTY</h2>
+            <button class="dbtn">KNOW MORE</button>
+        </div>
+        <div class="dep" id="department">
+            <img src="http://nsut.ac.in/sites/default/files/2021-03/dep2.PNG" alt="">
+            <h2>DEPARTMENT</h2>
+            <button class="dbtn">KNOW MORE</button>
+        </div>
+        <div class="dep" id="center">
+            <img src="http://nsut.ac.in/sites/default/files/2021-03/dep1.PNG" alt="">
+            <h2>CENTERS</h2>
+            <button class="dbtn">KNOW MORE</button>
+        </div>
+    </div>
+    <div class="lastslide">
+        <div id="quick" class="last">
+            <h3>QUICK LINKS</h3>
+
+            <p><a href="http://nsut.ac.in/en/list-of-faculties">Faculties</a></p>
+            <p><a href="http://nsut.ac.in/en/departments">Departments</a></p>
+            <p><a href="http://nsut.ac.in/en/Centres">Centers</a></p>
+            <p><a href="http://nsut.ac.in/en/Facilities">Facilities</a></p>
+            <p><a href="http://nsut.ac.in/en/notices">Notices</a></p>
+            <p><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=649953">Fee Payements</a></p>
+            <p><a href="https://www.imsnsit.org/imsnsit/">UMS</a></p>
+
+        </div>
+        <div id="explore" class="last">
+            <h3>EXPLORE</h3>
+
+            <p><a href="http://nsut.ac.in/en/centre/central-computer-centre">Central Computer Centre</a></p>
+            <p><a href="http://nsut.ac.in/en">Campus Life</a></p>
+            <p><a href="http://nsut.ac.in/en">University Newsletter</a></p>
+            <p><a href="http://nsut.ac.in/en">Educational Programmes</a></p>
+            <p><a href="http://nsut.ac.in/en">Social Initiatives</a></p>
+            <p><a href="http://nsut.ac.in/en/contact-us">Contact Us</a></p>
+
+        </div>
+        <div id="social" class="last">
+            <h3>SOCIAL MEDIA (DELHI GOVT.)</h3>
+
+            <p><a href="https://www.instagram.com/delhigovdigital/">Instagram</a></p>
+            <p><a href="https://www.youtube.com/c/DelhiGovernmentDG">YouTube</a></p>
+            <p><a href="https://www.facebook.com/DelhiGovDigital/">Facebook</a></p>
+            <p><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDelhiGovDigital%2F">Twitter</a></p>
+
+        </div>
+        <div id="netaji" class="last">
+            <p>Netaji Subhas University of Technology(NSUT)</p>
+            <p>Formerly Netaji Subhas Institute of Technology(NSIT)</p>
+            <p>(Govt. of NCT of Delhi)</p>
+        </div>
+    </div>
+</body>
+
+</html>
